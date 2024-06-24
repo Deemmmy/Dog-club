@@ -1,0 +1,59 @@
+.hero-section {
+    padding-top: 73px;
+
+    background: url(/img/hero-bg.png) 0 40px/contain no-repeat;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 150px;
+        background: url(/img/hero-bg.png) 0 80px/cover no-repeat;
+    }
+          @media screen and (min-width: $bp-desctop) {
+            padding-top: 297px;
+          }
+
+    &__container {
+        padding-top: 75px;
+        padding-bottom: 105px;
+
+        height: 100%;
+        background: url(/img/bg-elements-mob.png) 50% 150px no-repeat;
+
+
+        @media screen and (min-width: $bp-tablet) {
+            background: url(/img/dog.png)89% 75px/350px 380px no-repeat, url(/img/bg-elem.png) 100% 5px/600px 350px no-repeat;
+
+        }
+                  @media screen and (min-width: $bp-desctop) {
+                      background: url(/img/dog.png)89% 75px no-repeat,
+                      url(/img/bg-elem.png) 102% -9px no-repeat;
+                      padding-bottom: 236px;
+                  }
+    }
+
+    &__title {
+        font-size: 32px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 46px;
+            text-align: left;
+        }
+
+        ;
+
+        @media screen and (min-width: $bp-desctop) {
+            font-size: 72px;
+            text-align-last: left;
+        }
+    }
+
+
+    &__button {
+        margin: 0 auto;
+        display: block;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin: 0 0;
+        }
+    }
+}

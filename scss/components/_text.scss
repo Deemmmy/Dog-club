@@ -1,0 +1,10 @@
+.text {
+    margin-bottom: 16px;
+    text-align: center;
+
+    @media screen and (min-width: $bp-tablet) {
+        margin-bottom: 24px;
+        text-align: left;
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,82 @@
+.footer {
+    position: relative;
+    background-color: var(--colol-secondary-light);
+    padding-bottom: 40px;
+    @media screen and (min-width:$bp-desctop) {
+        padding: 32px 0 62px 0;
+    }
+    &__container{
+        @media screen and (min-width:$bp-desctop) {
+                display: flex;
+                gap: 136px;
+            }
+    }
+    &__icons.social-icons{
+        display: none;
+        @media screen and (min-width:$bp-desctop) {
+                display: block;
+            }
+    }
+    &__icon-link{
+        transition: 0.3s;
+        &:hover{
+                transform: scale(1.1);
+                fill: var(--color-brand-sec-light);
+            }
+    }
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media screen and (min-width:$bp-desctop) {
+                flex-direction: row;
+                align-items: start;
+                gap: 136px;
+            }    
+    }
+    
+    &__menu{
+    align-items: start;  
+    }
+    &__button{
+        margin-bottom: 8px;
+    }
+    &::before{
+        position: absolute;
+        content:'';
+        display: block;
+        background-image: url(/img/footer-dog-small.png);
+        background-repeat: no-repeat;
+        z-index: 12;
+        width: 128px;
+        height: 145px;
+        top: -116px;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        @media screen and (min-width:$bp-desctop) {
+                display: none;
+            }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        display: none;
+        z-index: 2;
+        @media screen and (min-width:$bp-desctop) {
+            display: block;
+            background-image: url(/img/footer-dog.png);
+            width: 292px;
+            height: 305px;
+            top: 47px;
+            left: 80.5%;
+        }
+    }
+}
+
+
+
+
+
+
+
+

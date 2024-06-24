@@ -1,0 +1,68 @@
+.less-talk {
+    &__container {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__img {
+        display: none;
+        position: relative;
+
+        @media screen and (min-width: $bp-desctop) {
+            display: block;
+
+            &:before {
+                content: '';
+                width: 72px;
+                height: 48px;
+                position: absolute;
+                z-index: 2;
+                top: 90%;
+                left: 35%;
+
+                background: url(/img/svg/food-icon.svg)0 0;
+            }
+
+        }
+
+    }
+
+    &__block {
+        @media screen and (min-width: $bp-desctop) {
+            margin-top: 155px;
+        }
+
+    }
+
+    &__text {
+        text-align: left;
+    }
+
+    &__services {}
+
+    &__button {
+        margin-top: 10px;
+        margin-right: 40px;
+    }
+
+    &__video {
+        display: none;
+        position: absolute;
+        top: 20.2%;
+        left: 60%;
+
+        @media screen and (min-width: $bp-desctop) {
+            display: block;
+        }
+    }
+
+    &__video--mobile {
+        // display: inline-block;
+        text-align: center;
+
+        @media screen and (min-width: $bp-desctop) {
+            display: none;
+
+        }
+    }
+}

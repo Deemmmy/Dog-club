@@ -1,0 +1,22 @@
+.section-title {
+    font-family: Rowdies, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 24px;
+
+    &--centered {
+        text-align: center;
+    }
+
+    &--colored {
+        color: var(--color-brand);
+    }
+
+    @media screen and (min-width:$bp-desctop) {
+        font-size: 56px;
+        margin-bottom: 40px;
+    }
+
+    ;
+
+}

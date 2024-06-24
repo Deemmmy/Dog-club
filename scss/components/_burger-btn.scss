@@ -1,0 +1,58 @@
+.burger-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    position: relative;
+    cursor: pointer;
+
+    & span,
+    & span::before,
+    & span::after {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        margin-top: -1px;
+        margin-left: -12px;
+        width: 24px;
+        height: 2px;
+        background-color: var(--color-brand);
+        z-index: 3;
+    }
+
+    & span:before,
+    & span:after {
+        content: '';
+        display: block;
+        transition: 0.5s;
+    }
+
+    & span:before {
+        transform: translateY(-6px);
+    }
+
+    & span:after {
+        transform: translateY(6px);
+    }
+
+    // fill: var(--color-primary-light);
+    @media screen and (min-width: $bp-tablet) {
+        display: none;
+    }
+
+
+    &__active span {
+        height: 0;
+    }
+
+    &__active span::before {
+        transform: rotate(45deg);
+    }
+
+    &__active span::after {
+        transform: rotate(-45deg);
+    }
+}

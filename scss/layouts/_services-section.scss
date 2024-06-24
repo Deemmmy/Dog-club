@@ -1,0 +1,83 @@
+.services-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: url(/img/Vector-serv-mob.png)0 0/cover no-repeat;
+    @media screen and (min-width:$bp-tablet) {
+                padding-top: 56px;
+                padding-bottom: 96px;
+                background: url(/img/svg/arrow.svg)95% 0/192px 144px no-repeat , url(/img/Vector-service.png)0 0/cover no-repeat;
+        }
+    &__block {
+        width: 240px;
+        height: 288px;
+        margin: 0 auto;
+        @media screen and (min-width:$bp-tablet){
+                display: flex;
+                gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+             }
+        
+            
+    }
+
+    &__item {
+        display: flex;
+        border: 1px solid #F9F9FF;
+        border-radius: 16px;
+        width: 240px;
+        height: 240px;
+        box-shadow: 0 4px 4px 0 rgba(24, 24, 23, 0.05);
+        background: linear-gradient(180deg, #fff 0%, #fffbf4 100%);
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: transform  0.5s ;
+        margin-bottom: 24px;
+        &:not(:first-child):not(:last-child) {
+                display: none;
+                @media screen and (min-width:$bp-tablet) {
+                        display: flex;;
+                    }
+            }
+        
+        &:hover{
+           transform: scale(1.1);
+        }            
+        
+        
+    }
+    &__more{
+        align-self:flex-end;
+        &--link.link {
+            color: var(--color-brand);
+            display: flex;
+            gap: 8px;
+            transition: all 0.5s;
+            font-size: 18px;
+            justify-content: center;
+            
+            @media screen and (min-width:$bp-desctop) {
+                &:hover {
+                        color: var(--color-brand-sec-light);
+                        transform: scale(1.1);
+                    }
+                              
+             }
+        }
+    }
+    &__link{
+        color: var(--color-brand);
+        font-size: 22px;
+        font-weight: 600;
+        
+    }
+    &__icon{
+        fill: var(--color-brand);
+    }
+}
+

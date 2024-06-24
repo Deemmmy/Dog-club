@@ -1,0 +1,19 @@
+.social-icons {
+    display: flex;
+    gap: 8px;
+
+    &__link {
+        fill: var(--color-brand);
+    }
+}
+.icon path {
+            transition: fill 0.5s;
+            /* Плавный переход цвета */
+            // fill: #839AA9;
+            /* Исходный цвет */
+        }
+    
+        .icon:hover path.iconSS {
+            fill: var(--color-brand);
+            /* Новый цвет при наведении */
+        }
