@@ -1,11 +1,11 @@
 .services-section {
     padding-top: 40px;
     padding-bottom: 40px;
-    background: url(/img/Vector-serv-mob.png)0 0/cover no-repeat;
+    background: url(../img/Vector-serv-mob.png)0 0/cover no-repeat;
     @media screen and (min-width:$bp-tablet) {
                 padding-top: 56px;
                 padding-bottom: 96px;
-                background: url(/img/svg/arrow.svg)95% 0/192px 144px no-repeat , url(/img/Vector-service.png)0 0/cover no-repeat;
+                background: url(../img/svg/arrow.svg)95% 0/192px 144px no-repeat , url(../img/Vector-service.png)0 0/cover no-repeat;
         }
     &__block {
         width: 240px;
