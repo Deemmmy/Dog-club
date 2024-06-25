@@ -354,82 +354,46 @@
 					<div class="contact-section__container">
 						<h2 class="contact-section__title section-title section-title--centered">Our experts will take care of your friend</h2>
 						<p class="contact-section__text">Fill out the form so we can contact you!</p>
-						<form  name="contact-form" autocomplete="off" novalidate action="">
-							  		<div class="contact-section__form-field input">
-									<label class="input__label visualy-hidden" for="user-name"
-										>Your name</label
-									>
-									<input
-										class="input__control"
-										id="user-name"
-										name="user-name"
-										type="text"
-										placeholder="Your name"
-										required
-									/>
-									<svg class="input__icon" width="32" height="27">
-										<use href="./img/icons.svg#icon-people"></use>
-									</svg>
-									</div>
-									<div class="contact-section__form-field input">
-									<label class="input__label visualy-hidden" for="pet-name"
-										>Pet name</label
-									>
-									<input
-										class="input__control"
-										id="pet-name"
-										name="pet-name"
-										type="text"
-										placeholder="Pet name"
-										required
-									/>
-									<svg class="input__icon" width="32" height="27">
-										<use href="./img/icons.svg#icon-pet"></use>
-									</svg>
-									</div>
-									
-									<div class="contact-section__form-field input">
-									<label class="input__label visualy-hidden" for="user-tel"
-										>Your phone</label
-									>
-									<input
-										class="input__control"
-										id="user-tel"
-										name="user-tel"
-										type="tel"
-										placeholder="Your phone"
-										required
-									/>
-									<svg class="input__icon" width="32" height="27">
-										<use href="./img/icons.svg#icon-phone"></use>
-									</svg>
-									</div>
-									<div class="contact-section__form-field input">
-									<label class="input__label visualy-hidden" for="user-email"
-										>Your email</label
-									>
-									<input
-										class="input__control"
-										id="user-email"
-										name="user-email"
-										type="email"
-										placeholder="Your email"
-										required
-									/>
-									<svg class="input__icon" width="32" height="27">
-										<use href="./img/icons.svg#icon-email"></use>
-									</svg>
-									</div>
-									<button class="contact-section__button button button--centered" type="submit">
-									Contact us
-									</button>
-								    <div class="contact-section__checkbox input__checkbox">
-										<input type="checkbox" id="checkbox-id" name="checkbox"><label for="checkbox-id">I agree to the privacy policy</label>
-									</div>
-							
-									
-									
-						</form>
+						<form name="contact-form" autocomplete="off" novalidate action="" id="contact-form">
+        <div class="contact-section__form-field input">
+            <label class="input__label visualy-hidden" for="user-name">Your name</label>
+            <input class="input__control" id="user-name" name="user-name" type="text" placeholder="Your name" required />
+            <svg class="input__icon" width="32" height="27">
+                <use href="./img/icons.svg#icon-people"></use>
+            </svg>
+            <span class="error-message" id="user-name-error"></span>
+        </div>
+        <div class="contact-section__form-field input">
+            <label class="input__label visualy-hidden" for="pet-name">Pet name</label>
+            <input class="input__control" id="pet-name" name="pet-name" type="text" placeholder="Pet name" required />
+            <svg class="input__icon" width="32" height="27">
+                <use href="./img/icons.svg#icon-pet"></use>
+            </svg>
+            <span class="error-message" id="pet-name-error"></span>
+        </div>
+        <div class="contact-section__form-field input">
+            <label class="input__label visualy-hidden" for="user-tel">Your phone</label>
+            <input class="input__control" id="user-tel" name="user-tel" type="tel" placeholder="Your phone" required />
+            <svg class="input__icon" width="32" height="27">
+                <use href="./img/icons.svg#icon-phone"></use>
+            </svg>
+            <span class="error-message" id="user-tel-error"></span>
+        </div>
+        <div class="contact-section__form-field input">
+            <label class="input__label visualy-hidden" for="user-email">Your email</label>
+            <input class="input__control" id="user-email" name="user-email" type="email" placeholder="Your email" required />
+            <svg class="input__icon" width="32" height="27">
+                <use href="./img/icons.svg#icon-email"></use>
+            </svg>
+            <span class="error-message" id="user-email-error"></span>
+        </div>
+        <div class="contact-section__checkbox input__checkbox">
+            <input type="checkbox" id="checkbox-id" name="checkbox" required>
+            <label for="checkbox-id">I agree to the privacy policy</label>
+            <span class="error-message" id="checkbox-error"></span>
+        </div>
+        <button class="contact-section__button button button--centered" type="submit">Contact us</button>
+    </form>
 				    </div>
 				</div>
 			</section>
@@ -605,5 +569,6 @@
 		  <script src="./js/header-scroll.js"></script>
 		<script src="./js/mobile-menu.js"></script>
 		<script src="./js/modal-open.js"></script>
+		<script src="./js/form-validate.js"></script>
 	</body>
 </html>

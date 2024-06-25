@@ -54,6 +54,7 @@
         color: var(--colol-secondary-grey);
         font-size: 12px;
         font-weight: 300;
+        margin-bottom: 10px;
     }
 
 }
@@ -67,3 +68,21 @@
     height: 1px;
     overflow: hidden;
 }
+
+         .error {
+             border-color: red;
+         }
+    
+         .error-message {
+             color: red;
+             font-size: 0.8em;
+            position: absolute;
+                bottom: -20px;
+                /* Position error message below the input field */
+                left: 0;
+                width: 100%;
+         }
+    
+         .input__label.visualy-hidden {
+             display: none;
+         }
